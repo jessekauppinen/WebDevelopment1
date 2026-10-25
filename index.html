@@ -1,10 +1,86 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jesse Kauppinen">
+  <title>Web Development Assignments – Jesse Kauppinen</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <h1>Hello World!</h1>
-    <p>This is my first web page.</p>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Basics of Web Development</p>
+      <h1>My Web Development Assignments</h1>
+      <p>
+        My name is Jesse Kauppinen. This page brings together the Assignments
+        I have completed during the course.
+      </p>
+
+      <nav aria-label="Exercise sections">
+        <a href="#s-assignments">S Assignments</a>
+        <a href="#a-assignments">A Assignments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="s-assignments" aria-labelledby="s-header">
+      <h2 id="s-header">S Assignments</h2>
+      <p>Classroom Assignments and the skills practised in them.</p>
+
+      <div class="card-grid">
+        <!-- Add a card here for each S exercise you have completed. -->
+        <article class="card">
+          <p class="task-id">S2</p>
+          <h3>GitHub Pages and Repository Management</h3>
+          <p>I practiced working with existing HTML and CSS code, organizing files in a GitHub repository, and publishing a website using GitHub Pages.</p>
+          <a class="card-link" href="s2/index.html">Open S2</a>
+        </article>
+        <article class="card">
+          <p class="task-id">S3</p>
+          <h3>HTML Lists and CSS</h3>
+          <p>I practiced using Visual Studio Code and Live Server, separating HTML and CSS into different files, creating ordered and unordered lists, and testing my website with Developer Tools and GitHub Pages.</p>
+          <a class="card-link" href="s3/index.html">Open S3</a>
+        </article>
+        <article class="card">
+          <p class="task-id">S4</p>
+          <h3>Subpages and Relative Links</h3>
+          <p>I practiced creating a subpage, navigating between web pages, organizing image files, and using relative file paths to link pages and images.</p>
+          <a class="card-link" href="s4/index.html">Open S4</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="a-assignments" aria-labelledby="a-header">
+      <h2 id="a-header">A Assignments</h2>
+      <p>Graded assignments and the skills demonstrated in them.</p>
+
+      <div class="card-grid">
+        <!-- Add a card here for each A assignment you have completed. -->
+        <article class="card">
+          <p class="task-id">A1</p>
+          <h3>Fixing the HTML Structure</h3>
+          <p>
+            I fixed the HTML errors and moved the styles into a separate
+            CSS file.
+          </p>
+          <a class="card-link" href="a1/index.html">Open A1</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Original template: OpenAI / ChatGPT</p>
+      <p>Modified by: Jesse Kauppinen</p>
+    </div>
+  </footer>
 </body>
+
 </html>
