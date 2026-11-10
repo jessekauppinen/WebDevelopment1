@@ -124,3 +124,18 @@ a:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Form validation styles */
+
+input:not([type="radio"]):user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+    border: 2px dashed #b00020;
+}
+
+input:not([type="radio"]):user-valid,
+select:user-valid,
+textarea:user-valid {
+    border: 2px solid #24733c;
+}
